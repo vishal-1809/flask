@@ -670,16 +670,4 @@ def on_data(data):
 if __name__=='__main__':
     # main()
     # app.run(debug=True)
-    socketio.run(app, debug=True,from flask import Flask, jsonify
-import os
-
-app = Flask(__name__)
-
-
-@app.route('/')
-def index():
-    return jsonify({"Choo Choo": "Welcome to your Flask app 🚅"})
-
-
-if __name__ == '__main__':
-    app.run(debug=True, port=os.getenv("PORT", default=5000)))
+    socketio.run(app, host="0.0.0.0", port=5000, debug=True)
